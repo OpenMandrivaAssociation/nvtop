@@ -13,6 +13,7 @@ BuildRequires:  pkgconfig(appstream-glib)
 BuildRequires:  pkgconfig(libdrm)
 BuildRequires:  pkgconfig(libsystemd)
 BuildRequires:  pkgconfig(ncursesw)
+BuildRequires:  pkgconfig(udev)
 
 Requires:       hicolor-icon-theme
 
@@ -25,7 +26,10 @@ a htop familiar way.
 %autosetup -p1
 
 %build
-%cmake
+%cmake  \
+        -DNVIDIA_SUPPORT=ON \
+        -DAMDGPU_SUPPORT=ON \
+        -DINTEL_SUPPORT=ON
 
 %make_build
 
@@ -38,3 +42,5 @@ a htop familiar way.
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/%{name}.1*
+%{_datadir}/icons/nvtop.svg
+%{_datadir}/metainfo/nvtop.metainfo.xml
