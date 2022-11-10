@@ -1,5 +1,3 @@
-%global appstream_id io.github.syllo.nvtop
-
 Name:           nvtop
 Version:        3.0.1
 Release:        1
@@ -39,6 +37,4 @@ a htop familiar way.
 %doc README.markdown
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
-%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_mandir}/man1/%{name}.1*
-%{_metainfodir}/%{appstream_id}.metainfo.xml
