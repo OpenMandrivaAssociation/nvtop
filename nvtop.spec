@@ -1,6 +1,6 @@
 Name:           nvtop
 Version:        3.0.1
-Release:        1
+Release:        2
 Summary:        GPU process monitoring for AMD, Intel and NVIDIA
 Group:          Monitoring
 License:        GPL-3.0-or-later and BSD-3-Clause
