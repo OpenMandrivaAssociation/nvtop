@@ -7,6 +7,7 @@ License:        GPL-3.0-or-later and BSD-3-Clause
 URL:            https://github.com/Syllo/nvtop
 Source0:        https://github.com/Syllo/nvtop/archive/%{version}/%{name}-%{version}.tar.gz
 
+BuildRequires:  make
 BuildRequires:  cmake >= 3.10
 BuildRequires:  desktop-file-utils
 BuildRequires:  pkgconfig(appstream-glib)
