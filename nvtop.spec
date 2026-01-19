@@ -43,5 +43,5 @@ a htop familiar way.
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/%{name}.1*
-%{_datadir}/icons/nvtop.svg
-%{_datadir}/metainfo/nvtop.metainfo.xml
+#{_datadir}/icons/nvtop.svg
+#{_datadir}/metainfo/nvtop.metainfo.xml
